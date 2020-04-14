@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap"); 
+body {
+  background: #E6E6FA;
+  height: 100vh;
+  font-family: 'Comic Neue', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .magic {
+  color: #FF0000;
+} */
+
+button {
+  background: transparent;
+  padding: 15px 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+  font-family: 'Comic Neue', cursive;
+  font-size: 25px;
+  border: 2px solid #4e4e4e;
+  outline: none;
+  border-radius: 8px;
+}
+button:active {
+  transform: scale(0.98);
+}
+.creator {
+  padding: 15px 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-family: 'Comic Neue', cursive;
+  font-size: 18px;
+  outline: none;
+  border-radius: 8px;
+}
+
+
+.sticky-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sticky-container .sticky {
+  position: relative;
+  height: 280px;
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  padding: 18px 10px 10px 10px;
+  box-sizing: border-box;
+  box-shadow: 6px 7px 12px -5px rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  background: #ffd31d;
+  resize: both;
+  overflow: scroll;
+  animation: stickAnim .3s ease;
+  border-radius: 8px;
+}
+.sticky-container .sticky::-webkit-scrollbar {
+  display: none;
+}
+.sticky-container .sticky:focus {
+  outline: none;
+}
+.sticky-container .sticky .close {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 25px;
+}
+.sticky-container .sticky .close:active {
+  transform: scale(0.98);
+}
+@keyframes stickAnim {
+  0% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
